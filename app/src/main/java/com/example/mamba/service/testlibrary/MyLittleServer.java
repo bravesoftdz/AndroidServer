@@ -4,11 +4,11 @@ import android.util.Log;
 import java.io.IOException;
 
 
-public class MyServer extends NanoHTTPD {
-    private static final String TAG = "MyServer";
+public class MyLittleServer extends NanoHTTPD {
+    private static final String TAG = "MyLittleServer";
     private static final int PORT = 8080;
 
-    public MyServer() throws IOException {
+    public MyLittleServer() throws IOException {
         super(PORT);
         start();
         Log.d(TAG, "server running!");
